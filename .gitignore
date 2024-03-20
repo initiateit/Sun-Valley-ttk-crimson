@@ -12,6 +12,3 @@ dist/
 sdist/
 wheels/
 *.egg-info/
-.github/workflows/generate_spritesheet.yml
-.github/workflows/generate_spritesheet.yml
-.github/workflows/test.yml
