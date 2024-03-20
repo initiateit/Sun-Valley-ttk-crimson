@@ -5,12 +5,12 @@ This is a modified theme of Sun-Valley-ttk introducing Crimson color hints. Ther
 @rdbende must take all credit. All I did was click the mouse many times and rename some items.
 
 
-## Crimson Light
-![Screenshot from 2024-03-20 19-13-43](https://github.com/initiateit/sun-valley-ttk-crimson/assets/59432267/995a1d69-7d06-4d9e-a13c-489219f0a6c2)
-
 ## Crimson Dark
-![Screenshot from 2024-03-20 19-14-19](https://github.com/initiateit/sun-valley-ttk-crimson/assets/59432267/bf71cd5e-b6c9-47b2-9613-f47ced7c194a)
+![Screenshot from 2024-03-20 19-14-19](https://github.com/initiateit/Sun-Valley-ttk-crimson/assets/59432267/80908acc-e868-405a-be22-0744bc51bfaf)
 
+
+## Crimson Light
+![Screenshot from 2024-03-20 19-13-43](https://github.com/initiateit/Sun-Valley-ttk-crimson/assets/59432267/94ab1346-960b-4476-9938-ad4661016d88)
 
 
 ## Installation [![PyPi downloads](https://static.pepy.tech/badge/svc-ttk)](https://pypi.org/project/svc-ttk)
