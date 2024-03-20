@@ -1,8 +1,10 @@
   
 # Sun Valley ttk Crimson theme
-This is a modified theme of Sun-Valley-ttk introducing Crimson color hints. There are various modifcations.
-
-@rdbende must take all credit. All I did was click the mouse many times and rename some items.
+>
+This is a modified theme of Sun-Valley-ttk introducing Crimson color hints.
+There are various modifications and some may be questionable, but I think it suits the theme visually.
+>
+[rdbende](https://github.com/rdbende) must take all credit. All I did was click the mouse many times and rename some items.
 
 
 ## Crimson Dark
@@ -23,11 +25,12 @@ pip install svc-ttk
 
 ## Usage [![Documentation](https://img.shields.io/badge/-documentation-%23c368c4)](https://github.com/rdbende/Sun-Valley-ttk-theme/wiki/Usage-with-Python)
 > **Note:**
+> This theme is the same as Sun Valley TTK for all intents and purposes. As such the documentation for said theme is still relevant.
 > 
-> The theme will only be applied to themeable (`tkinter.ttk`) widgets, and not with the regular Tkinter widgets, they only benefit from the color scheme.
+> The theme will only be applied to themeable (`tkinter.ttk`) widgets, and not to the regular Tkinter widgets, they only benefit from the color scheme.
 
 For detailed documentation, visit the [wiki page](https://github.com/rdbende/Sun-Valley-ttk-theme/wiki/Usage-with-Python).
-
+>
 ```python
 import tkinter
 from tkinter import ttk
