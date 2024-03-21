@@ -34,8 +34,8 @@ namespace eval ttk::theme::svc_light {
       }
     }
 
-    ttk::style configure TButton -padding {8 2 8 3} -anchor center -foreground $colors(-fg) -font SunValleyButtonFont
-    ttk::style map TButton -foreground [list disabled "#a2a2a2" pressed "#636363" active "#1a1a1a"]
+    ttk::style configure TButton -padding {8 2 8 3} -anchor center -foreground $colors(-fg) -font SunValleyButtonFont -weight bold
+    ttk::style map TButton -foreground [list disabled "#a2a2a2" pressed "#bc1e47" active "#1a1a1a"]
     
     ttk::style element create Button.button image \
       [list $I(button-rest) \
@@ -77,8 +77,8 @@ namespace eval ttk::theme::svc_light {
       }
     }
 
-    ttk::style configure Accent.TButton -padding {8 2 8 3} -anchor center -foreground "#ffffff"
-    ttk::style map Accent.TButton -foreground [list pressed "#c1d8ee" disabled "#ffffff"]
+    ttk::style configure Accent.TButton -padding {8 2 8 3} -anchor center -foreground "#ffffff" -font SunValleyButtonFontBold
+    ttk::style map Accent.TButton -foreground [list pressed "#fafafa" disabled "#ffffff"]
 
     ttk::style element create AccentButton.button image \
       [list $I(button-accent-rest) \
@@ -208,9 +208,9 @@ namespace eval ttk::theme::svc_light {
 
     ttk::style map Toggle.TButton -foreground \
       [list {selected disabled} "#ffffff" \
-        {selected pressed} "#636363" \
+        {selected pressed} "#bc1e47" \
         selected "#ffffff" \
-        pressed "#c1d8ee" \
+        pressed "#fafafa" \
         disabled "#a2a2a2" \
         active "#1a1a1a"
       ]

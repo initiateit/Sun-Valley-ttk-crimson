@@ -10,16 +10,16 @@ if {[tk windowingsystem] == "win32"} {
   set static " static"
 }
 
-font create SunValleyCaptionFont -family "Segoe UI Variable$static Small" -size -12
-font create SunValleyBodyFont -family "Segoe UI Variable$static Text" -size -14
-font create SunValleyButtonFont -family "Segoe UI Variable$static Text" -size -14 -weight bold
-font create SunValleyBodyStrongFont -family "Segoe UI Variable$static Text Semibold" -size -14
-font create SunValleyBodyLargeFont -family "Segoe UI Variable$static Text" -size -18
-font create SunValleySubtitleFont -family "Segoe UI Variable$static Display Semibold" -size -20
-font create SunValleyTitleFont -family "Segoe UI Variable$static Display Semibold" -size -28
-font create SunValleyTitleLargeFont -family "Segoe UI Variable$static Display Semibold" -size -40
-font create SunValleyDisplayFont -family "Segoe UI Variable$static Display Semibold" -size -68
-
+font create SunValleyCaptionFont -family "IBM Plex Sans" -size -12
+font create SunValleyBodyFont -family "IBM Plex Sans Medium" -size -14
+font create SunValleyButtonFont -family "IBM Plex Sans Semibold" -size -14
+font create SunValleyButtonFontBold -family "IBM Plex Sans Bold" -size -14 -weight bold
+font create SunValleyBodyStrongFont -family "IBM Plex Sans" -size -14
+font create SunValleyBodyLargeFont -family "IBM Plex Sans" -size -18
+font create SunValleySubtitleFont -family "IBM Plex Sans" -size -20 -weight bold
+font create SunValleyTitleFont -family "IBM Plex Sans" -size -28 -weight bold
+font create SunValleyTitleLargeFont -family "IBM Plex Sans" -size -40 -weight bold
+font create SunValleyDisplayFont -family "IBM Plex Sans" -size -68 -weight bold
 
 proc config_entry_font {w} {
   set font_config [$w config -font]
@@ -36,27 +36,30 @@ proc config_menus {w} {
   if {[tk windowingsystem] == "aqua" || [tk windowingsystem] == "win32"} {
     return
   }
-
+  set fontSpec "SunValleyBodyFont 10"
   set theme [ttk::style theme use]
   if {$theme == "sun-valley-crimson-dark"} {
     $w configure \
-      -relief solid \
-      -borderwidth 1 \
+      -relief flat \
+      -borderwidth 0 \
       -activeborderwidth 0 \
-      -background "#292929" \
+      -background "#f9f9f9" \
       -activebackground $ttk::theme::svc_dark::colors(-selbg) \
       -activeforeground $ttk::theme::svc_dark::colors(-selfg) \
-      -selectcolor $ttk::theme::svc_dark::colors(-selfg)
+      -selectcolor $ttk::theme::svc_dark::colors(-selfg) \
+      -font $fontSpec  ;# Added continuation character for correct syntax
   } elseif {$theme == "sun-valley-crimson-light"} {
     $w configure \
-      -relief solid \
-      -borderwidth 1 \
+      -relief flat \
+      -borderwidth 0 \
       -activeborderwidth 0 \
-      -background "#e7e7e7" \
+      -background "#f9f9f9" \
       -activebackground $ttk::theme::svc_dark::colors(-selbg) \
       -activeforeground $ttk::theme::svc_dark::colors(-selfg) \
-      -selectcolor $ttk::theme::svc_dark::colors(-selfg)
+      -selectcolor $ttk::theme::svc_dark::colors(-selfg) \
+      -font $fontSpec  ;# Added continuation character for correct syntax
   }
+
 
   if {[[winfo toplevel $w] cget -menu] != $w} {
     if {$theme == "sun-valley-crimson-dark"} {
