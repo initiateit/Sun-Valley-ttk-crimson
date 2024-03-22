@@ -1,1 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
 
+[project]
+name = "svc_ttk"
+version = "2.6.1"
+license = { file = "LICENSE" }
+description = "A modified theme of Sun-Valley-ttk with crimson hinting"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["svc-ttk", "crimson", "red", "tcl", "tcl/tk", "theme", "tile", "tk", "ttk", "tkinter", "modern", "fluent", "dark-theme", "sun-valley", "windows-11", "winui"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: User Interfaces",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Tcl",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+authors = [
+    { name = "initiateit", email = "jason@initiateit.com.au" },
+    { name = "rdbende", email = "rdbende@proton.me" },
+]
+
+
+[project.urls]
+Homepage = "https://github.com/initiateit/Sun-Valley-ttk-crimson-theme"
+Documentation = "https://github.com/initiateit/Sun-Valley-ttk-crimson-theme"
+Tracker = "https://github.com/initiateit/Sun-Valley-ttk-crimson-theme/issues"
+
+[project.optional-dependencies]
+test = ["pytest", "mypy"]
+
+[tool.setuptools]

@@ -5,7 +5,7 @@ from setuptools import setup
 
 long_description = re.sub(
     r"(?s)<picture>.*</picture>",
-    '<img alt="Cover image" src="https://raw.githubusercontent.com/rdbende/Sun-Valley-ttk-theme/master/assets/hero_light.png">',
+    '<img alt="Cover image" src="https://raw.githubusercontent.com/initiateit/Sun-Valley-ttk-theme/master/assets/hero_light.png">',
     (Path(__file__).parent / "README.md").read_text(),
 )
 
@@ -14,13 +14,13 @@ setup(
     name="svc_ttk",
     version="2.6.0",
     license="MIT",
-    author="rdbende, initiateit",
+    authors="rdbende, initiateit",
     author_email="rdbende@proton.me, jason@initiateit.com.au",
-    url="https://github.com/rdbende/Sun-Valley-ttk-crimson-theme",
+    url="https://github.com/initiateit/Sun-Valley-ttk-crimson-theme",
     project_urls={
-        "Source": "https://github.com/rdbende/Sun-Valley-ttk-crimson-theme",
-        "Documentation": "https://github.com/rdbende/Sun-Valley-ttk-crimson-theme",
-        "Tracker": "https://github.com/rdbende/Sun-Valley-ttk-crimson-theme/issues",
+        "Source": "https://github.com/initiateit/Sun-Valley-ttk-crimson-theme",
+        "Documentation": "https://github.com/initiateit/Sun-Valley-ttk-crimson-theme",
+        "Tracker": "https://github.com/initiateit/Sun-Valley-ttk-crimson-theme/issues",
     },
     description="A modified theme of Sun-Valley-ttk with crimson hinting",
     long_description=long_description,
