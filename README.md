@@ -5,14 +5,17 @@ This is a modified theme of Sun-Valley-ttk introducing Crimson color hints.
 There are various modifications and some may be questionable, but I think it suits the theme visually.
 >
 [rdbende](https://github.com/rdbende) must take all credit. All I did was click the mouse many times and rename some items.
-
+>
+The theme has the main font declarations set to [IBM Plex Sans](https://fonts.google.com/specimen/IBM+Plex+Sans) instead of [SegoeUI-VF](https://docs.microsoft.com/en-us/windows/apps/design/downloads/#fonts) when not using Microsoft Windows.
+>
+If you do not have either installed the default font from your OS will be used.
 
 ## Crimson Dark
-![Screenshot from 2024-03-20 19-14-19](https://github.com/initiateit/Sun-Valley-ttk-crimson/assets/59432267/80908acc-e868-405a-be22-0744bc51bfaf)
-
-
+![image](https://github.com/initiateit/Sun-Valley-ttk-crimson/assets/59432267/69811cee-b55b-455d-a2cf-c0b10af23af5)
+>
 ## Crimson Light
-![Screenshot from 2024-03-20 19-13-43](https://github.com/initiateit/Sun-Valley-ttk-crimson/assets/59432267/94ab1346-960b-4476-9938-ad4661016d88)
+![image](https://github.com/initiateit/Sun-Valley-ttk-crimson/assets/59432267/bb4583db-90cc-4736-b0b5-aa32396382c3)
+
 
 
 ## Installation [![PyPi downloads](https://static.pepy.tech/badge/svc-ttk)](https://pypi.org/project/svc-ttk)
