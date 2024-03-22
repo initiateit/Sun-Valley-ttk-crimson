@@ -3,8 +3,7 @@
 
 ![image](https://raw.githubusercontent.com/initiateit/Sun-Valley-ttk-crimson/main/assets/hero_dark.png?token=GHSAT0AAAAAACON7JGMK2DEFBK44RH3RXZMZP5KO5A)
 
-This is a modified theme of Sun-Valley-ttk introducing Crimson color hints.  
-There are various modifications and some may be questionable, but I think it suits the theme visually.  
+This is a modified theme of Sun-Valley-ttk introducing Crimson color hints. There are various modifications and some may be questionable, but I think it suits the theme visually.  
 
 [rdbende](https://github.com/rdbende) must take all credit. All I did was click the mouse many times and rename some items.  
 
