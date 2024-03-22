@@ -1,6 +1,8 @@
   
-# Sun Valley ttk Crimson theme
->
+# Sun Valley ttk Crimson theme  
+
+![image](https://raw.githubusercontent.com/initiateit/Sun-Valley-ttk-crimson/main/assets/hero_dark.png?token=GHSAT0AAAAAACON7JGMK2DEFBK44RH3RXZMZP5KO5A)
+
 This is a modified theme of Sun-Valley-ttk introducing Crimson color hints.  
 There are various modifications and some may be questionable, but I think it suits the theme visually.  
 
@@ -11,13 +13,13 @@ The theme has the main font declarations set to [IBM Plex Sans](https://fonts.go
 If you do not have either installed the default font from your OS will be used.  
 
 ## Crimson Dark
-![image](https://github.com/initiateit/Sun-Valley-ttk-crimson/assets/59432267/69811cee-b55b-455d-a2cf-c0b10af23af5)  
+![image](https://raw.githubusercontent.com/initiateit/Sun-Valley-ttk-crimson/main/assets/dark.png?token=GHSAT0AAAAAACON7JGNFT2VM6FYDTNLMAKYZP5KNCQ)  
 ## Crimson Light
-![image](https://github.com/initiateit/Sun-Valley-ttk-crimson/assets/59432267/bb4583db-90cc-4736-b0b5-aa32396382c3)  
+![image](https://raw.githubusercontent.com/initiateit/Sun-Valley-ttk-crimson/main/assets/light.png?token=GHSAT0AAAAAACON7JGNV7RC5WSCGKLRSLOKZP5KNTA)  
 
 
 
-## Installation [![PyPi downloads](https://static.pepy.tech/badge/svc-ttk)](https://pypi.org/project/svc-ttk)
+## Installation
 The theme is easily installable as a Python package
 
 ```
