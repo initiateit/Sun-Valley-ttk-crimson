@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "svc_ttk"
-version = "2.6.1"
+version = "2.6.2"
 license = { file = "LICENSE" }
 description = "A modified theme of Sun-Valley-ttk with crimson hinting"
 readme = "README.md"
