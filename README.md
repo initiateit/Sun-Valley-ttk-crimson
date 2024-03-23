@@ -12,9 +12,10 @@ The theme has the main font declarations set to [IBM Plex Sans](https://fonts.go
 If you do not have either installed the default font from your OS will be used.  
 
 ## Crimson Dark
-![image](https://raw.githubusercontent.com/initiateit/Sun-Valley-ttk-crimson/main/assets/dark.png?token=GHSAT0AAAAAACON7JGNFT2VM6FYDTNLMAKYZP5KNCQ)  
+<img src="https://raw.githubusercontent.com/initiateit/Sun-Valley-ttk-crimson/main/assets/dark.png?token=GHSAT0AAAAAACON7JGNFT2VM6FYDTNLMAKYZP5KNCQ" alt="Crimson Dark" style="max-width: 100%; height: auto;">
 ## Crimson Light
-![image](https://raw.githubusercontent.com/initiateit/Sun-Valley-ttk-crimson/main/assets/light.png?token=GHSAT0AAAAAACON7JGNV7RC5WSCGKLRSLOKZP5KNTA)  
+<img src="https://raw.githubusercontent.com/initiateit/Sun-Valley-ttk-crimson/main/assets/light.png?token=GHSAT0AAAAAACON7JGNV7RC5WSCGKLRSLOKZP5KNTA" alt="Crimson Light" style="max-width: 100%; height: auto;">
+
 
 
 
