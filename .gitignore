@@ -12,3 +12,6 @@ dist/
 sdist/
 wheels/
 *.egg-info/
+
+/src/dark/old
+/src/dark/new
