@@ -1,7 +1,7 @@
   
 # Sun Valley ttk Crimson theme  
 
-![image](https://raw.githubusercontent.com/initiateit/Sun-Valley-ttk-crimson/main/assets/hero_dark.png?token=GHSAT0AAAAAACON7JGMK2DEFBK44RH3RXZMZP5KO5A)
+![image](https://github.com/initiateit/Sun-Valley-ttk-crimson/blob/main/assets/hero_dark.png)
 
 This is a modified theme of Sun-Valley-ttk introducing Crimson color hints. There are various modifications and some may be questionable, but I think it suits the theme visually.  
 
@@ -12,10 +12,10 @@ The theme has the main font declarations set to [IBM Plex Sans](https://fonts.go
 If you do not have either installed the default font from your OS will be used.  
 
 ## Crimson Dark
-<img src="https://raw.githubusercontent.com/initiateit/Sun-Valley-ttk-crimson/main/assets/dark.png?token=GHSAT0AAAAAACON7JGNFT2VM6FYDTNLMAKYZP5KNCQ" alt="Crimson Dark" style="width: 800px; height: auto;">
+<img src="https://github.com/initiateit/Sun-Valley-ttk-crimson/blob/main/assets/dark.png" alt="Crimson Dark" style="width: 800px; height: auto;">
 
 ## Crimson Light
-<img src="https://raw.githubusercontent.com/initiateit/Sun-Valley-ttk-crimson/main/assets/light.png?token=GHSAT0AAAAAACON7JGNV7RC5WSCGKLRSLOKZP5KNTA" alt="Crimson Light" style="width: 800px; height: auto;">
+<img src="https://github.com/initiateit/Sun-Valley-ttk-crimson/blob/main/assets/light.png" alt="Crimson Light" style="width: 800px; height: auto;">
 
 
 
