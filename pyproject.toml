@@ -2,10 +2,12 @@
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
+[tool.setuptools]
+license-files = []
+
 [project]
 name = "svc_ttk"
-version = "2.6.3"
-license = { file = "LICENSE" }
+version = "2.6.4"
 description = "A modified theme of Sun-Valley-ttk with crimson hinting"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -24,6 +26,8 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
+license = { text = "MIT" }
+
 authors = [
     { name = "initiateit", email = "jason@initiateit.com.au" },
     { name = "rdbende", email = "rdbende@proton.me" },
@@ -38,4 +42,3 @@ Tracker = "https://github.com/initiateit/Sun-Valley-ttk-crimson-theme/issues"
 [project.optional-dependencies]
 test = ["pytest", "mypy"]
 
-[tool.setuptools]
