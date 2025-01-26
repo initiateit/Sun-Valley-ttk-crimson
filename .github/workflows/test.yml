@@ -22,7 +22,7 @@ jobs:
     strategy:
       matrix:
         os: ["ubuntu-latest", "windows-latest"]
-        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12.0-beta.3"]
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v3
@@ -39,20 +39,21 @@ jobs:
   # Separate from other pytests because tkinter doesn't work on macos with actions/setup-python.
   # It imports, but gives this error:    RuntimeError: tk.h version (8.6) doesn't match libtk.a version (8.5)
   pytest-macos:
-    runs-on: macos-latest
-    strategy:
-      matrix:
-        python-version: ["3.8", "3.9", "3.10", "3.11"]
-    env:
-      TCLLIBPATH: ./lib
-      PYTHON: /usr/local/opt/python@${{ matrix.python-version }}/libexec/bin/python
-    steps:
-    - uses: actions/checkout@v3
-    - run: brew install python@${{ matrix.python-version }}
-    - if: matrix.python-version != '3.8'
-      run: brew install python-tk@${{ matrix.python-version }}
-    - run: $PYTHON --version
-    - run: |
-          python3 -m pip install .
-          python3 -m pip install pytest
-          python3 -m pytest
+  runs-on: macos-latest
+  strategy:
+    matrix:
+      python-version: ["3.9", "3.10", "3.11"]
+  steps:
+  - uses: actions/checkout@v3
+  - run: brew install python@${{ matrix.python-version }}
+  - run: |
+        export PATH="/opt/homebrew/opt/python@${{ matrix.python-version }}/libexec/bin:$PATH"
+        python3 --version
+  - run: |
+        python3 -m venv venv
+        source venv/bin/activate
+        pip install --upgrade pip
+        pip install .
+        pip install pytest
+        pytest
+
