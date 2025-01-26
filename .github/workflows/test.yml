@@ -54,6 +54,8 @@ jobs:
         fi
     - run: python3 --version
     - run: |
+          python3 -m venv venv
+          source venv/bin/activate
           python3 -m pip install .
           python3 -m pip install pytest
           python3 -m pytest
