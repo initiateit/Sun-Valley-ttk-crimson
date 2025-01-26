@@ -42,20 +42,16 @@ jobs:
     runs-on: macos-latest
     strategy:
       matrix:
-        python-version: ["3.9", "3.10", "3.11"]  # Removed 3.8 due to deprecation
+        python-version: ["3.9", "3.10", "3.11"]
     steps:
     - uses: actions/checkout@v3
+    - run: brew install python@${{ matrix.python-version }}
     - run: |
-        if [[ "${{ matrix.python-version }}" == "3.8" ]]; then
-          curl -O https://www.python.org/ftp/python/3.8.16/python-3.8.16-macos11.pkg
-          sudo installer -pkg python-3.8.16-macos11.pkg -target /
-        else
-          brew install python@${{ matrix.python-version }}
-        fi
-    - run: python3 --version
+          brew install python-tk@${{ matrix.python-version }}
+          export PATH="/opt/homebrew/opt/python@${{ matrix.python-version }}/libexec/bin:$PATH"
+          python3 --version
     - run: |
-          python3 -m venv venv
-          source venv/bin/activate
-          python3 -m pip install .
-          python3 -m pip install pytest
+          python3 -m pip install --upgrade pip
+          python3 -m pip install . --break-system-packages
+          python3 -m pip install pytest --break-system-packages
           python3 -m pytest
