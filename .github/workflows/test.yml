@@ -22,7 +22,7 @@ jobs:
     strategy:
       matrix:
         os: ["ubuntu-latest", "windows-latest"]
-        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12.0-beta.3"]
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v3
@@ -42,16 +42,17 @@ jobs:
     runs-on: macos-latest
     strategy:
       matrix:
-        python-version: ["3.8", "3.9", "3.10", "3.11"]
-    env:
-      TCLLIBPATH: ./lib
-      PYTHON: /usr/local/opt/python@${{ matrix.python-version }}/libexec/bin/python
+        python-version: ["3.9", "3.10", "3.11"]  # Removed 3.8 due to deprecation
     steps:
     - uses: actions/checkout@v3
-    - run: brew install python@${{ matrix.python-version }}
-    - if: matrix.python-version != '3.8'
-      run: brew install python-tk@${{ matrix.python-version }}
-    - run: $PYTHON --version
+    - run: |
+        if [[ "${{ matrix.python-version }}" == "3.8" ]]; then
+          curl -O https://www.python.org/ftp/python/3.8.16/python-3.8.16-macos11.pkg
+          sudo installer -pkg python-3.8.16-macos11.pkg -target /
+        else
+          brew install python@${{ matrix.python-version }}
+        fi
+    - run: python3 --version
     - run: |
           python3 -m pip install .
           python3 -m pip install pytest
